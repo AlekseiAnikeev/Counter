@@ -22,7 +22,7 @@ public class Counter : MonoBehaviour
     private void Update()
     {
         if (Input.GetMouseButtonUp(0))
-            _isButtonPressed = !_isButtonPressed;
+            _isButtonPressed = _isButtonPressed == false;
     }
 
     IEnumerator TestCoroutine()
